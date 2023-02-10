@@ -8,6 +8,7 @@ body {
     background-image: url(../assets/bg-main-mobile.png);
     background-repeat: no-repeat;
     background-position: top -200px right -200px;
+    transition: 1s;
 }
 
 
@@ -16,16 +17,19 @@ body {
 header {
     margin-top: 40px;
     padding-left: 24px;
+    transition: 1s;
 }
 
 /* ----------------- MAIN ------------------ */
 
 main {
     margin-top: 64px;
+    transition: 1s;
 }
 
 .intro {
     padding-left: 24px;
+    transition: 1s;
 }
 
 .intro h1 {
@@ -35,6 +39,7 @@ main {
     letter-spacing: -0.454545px;
     color: #191826;
     max-width: 13ch;
+    transition: 1s;
 }
 
 .intro p {
@@ -44,12 +49,14 @@ main {
     color: #191826;
     max-width: 34ch;
     margin-top: 20px;
+    transition: 1s;
 }
 
 .main_section {
     margin-top: 166px;
     display: flex;
     justify-content: center;
+    transition: 1s;
 }
 
 .background {
@@ -62,6 +69,7 @@ main {
     background-position: top 0 left 50%;
     max-width: 695px;
     position: relative;
+    transition: 1s;
 }
 
 .phone {
@@ -72,6 +80,7 @@ main {
     position: relative;
     margin: auto;
     top: -98px;
+    transition: 1s;
 }
 
 .pay {
@@ -80,12 +89,14 @@ main {
     color: #FCFAF9;
     background: #FA7453;
     border-radius: 12px;
+    transition: 1s;
 }
 
 .premium {
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
+    transition: 1s;
 }
 
 .premium_info {
@@ -94,6 +105,7 @@ main {
     line-height: 28px;
     max-width: 28ch;
     margin-top: 12px;
+    transition: 1s;
 }
 
 .dollar {
@@ -103,6 +115,7 @@ main {
     margin-top: 36px;
     display: flex;
     align-items: center;
+    transition: 1s;
 }
 
 .dollar span {
@@ -111,6 +124,7 @@ main {
     line-height: 32px;
     letter-spacing: -0.2px;
     margin-left: 16px;
+    transition: 1s;
 }
 
 .ios, .android {
@@ -132,6 +146,7 @@ main {
     background: #191826;
     margin-top: 32px;
     color: #FCFAF9;
+    transition: 1s;
 }
 
 .ios:hover {
@@ -144,6 +159,7 @@ main {
     background: #FCFAF9;
     margin-top: 16px;
     color: #191826;
+    transition: 1s;
 }
 
 .android:hover {
@@ -162,12 +178,14 @@ footer {
     flex-direction: column;
     align-items: stretch;
     gap: 64px;
+    transition: 1s;
 }
 
 .starter_footer {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    transition: 1s;
 }
 
 .starter_footer p {
@@ -175,15 +193,23 @@ footer {
     font-size: 16px;
     line-height: 26px;
     color: #191826;
+    transition: 1s;
+}
+
+.mobile_tablet_remove_br {
+    display: none;
+    transition: 1s;
 }
 
 .starter_footer span {
     font-weight: 700;
+    transition: 1s;
 }
 
 .social {
     display: flex;
     gap: 20px;
+    transition: 1s;
 }
 
 .social_icon path {
@@ -206,13 +232,13 @@ footer {
 
 @media (min-width: 768px) {
     
-    /* HEADER */
-
     body {
         background-image: url(../assets/bg-main-tablet.png), url(../assets/bg-pattern-1.svg);
         background-position: top -316px right -146px, top -40px right -45px;
         background-repeat: no-repeat, no-repeat;
     }
+    
+    /* HEADER */
 
     header {
         padding-left: 39px;
@@ -248,7 +274,7 @@ footer {
     }
 
     .background {
-        background-position: top 39px left 50% right 50%;
+        background-position: top -44px left 220px;
     }
 
     .phone {
@@ -266,7 +292,7 @@ footer {
         position: absolute;
         top: 151px;
         right: 55px;
-    }
+    } 
 
     /* FOOTER */
 
@@ -278,8 +304,110 @@ footer {
         align-items: end;
     }
 
+    .desktop_remove_br {
+        display: none;
+    }
+
+    .mobile_tablet_remove_br {
+        display: inline;
+    }
+
     .social {
         margin-bottom: 39px;
+    }
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 1440px)
+{
+
+    body {
+        background-image: url(../assets/bg-main-desktop.png), url(../assets/bg-pattern-1.svg);
+        background-position: top -316px right -146px, top -40px right -45px;
+        background-repeat: no-repeat, no-repeat;
+    }
+
+    /* HEADER */
+
+    header {
+        padding-left: 165px;
+    }
+
+    /* MAIN */
+
+    .intro {
+        padding-left: 165px;
+        margin-top: 127px;
+    }
+
+    .intro h1 {
+        max-width: 20ch;
+    }
+
+    .intro p {
+        max-width: 69ch;
+        margin-top: 40px;
+    }
+
+    .main_section {
+        margin-top: 321px;
+    }
+
+    .background {
+        max-width: 1110px;
+        background-position: top -36px left 332px;
+    }
+
+    .phone {
+        width: 312px;
+        height: 642px;
+        left: 102px;
+        top: -213px;
+    }
+
+    .pay {
+        padding: 58px 59px 48px 54px;
+        width: 446px;
+        height: 625px;
+        top: 90px;
+        right: 95px;
+    }
+
+    .premium {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .premium_info {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .dollar {
+        margin-top: 39px;
+    }
+
+    .ios {
+        margin-top: 46px;
+    }
+
+    .ios, .android {
+        width: 333px;
+        height: 61px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 201px;
+        padding: 0 165px 91px;
+    }
+
+    .starter_footer {
+        flex-direction: row;
+        gap: 137px;
     }
 }
 
